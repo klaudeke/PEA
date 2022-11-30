@@ -106,7 +106,7 @@ header a:hover{
         rgba(0,0,0,0.5)
 
     )
-    ,url("imagenes/taller1.webp");
+    ,url("/static/core/img/taller1.webp");
     
 }
 
@@ -117,7 +117,7 @@ header a:hover{
         rgba(0,0,0,0.5)
 
     )
-    ,url("imagenes/taller2.jpg");
+    ,url("/static/core/img/taller2.jpg");
 }
 
 .carta:nth-child(3){
@@ -127,7 +127,7 @@ header a:hover{
         rgba(0,0,0,0.5)
 
     )
-    ,url("imagenes/taller3.jpg");
+    ,url("/static/core/img/taller3.jpg");
 }
 .carrousel{
     width: 100%;
@@ -269,7 +269,7 @@ ul{
         width: 100%;
     }
     header .logo{
-        background-image: url("imagenes/logoo.png");
+        background-image: url("/static/core/img/logoo.png");
         background-size: cover;
         background-position: center center;
         height: 70px;
@@ -290,7 +290,7 @@ ul{
 
     }
     #nosotros .img-container{
-        background-image: url("imagenes/imagen1.jpg");
+        background-image: url("/static/core/img/imagen1.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
