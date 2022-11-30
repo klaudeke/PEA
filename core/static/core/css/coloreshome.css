@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html{
     scroll-behavior: smooth;
@@ -106,7 +108,7 @@ header a:hover{
         rgba(0,0,0,0.5)
 
     )
-    ,url("imagenes/taller1.webp");
+    ,url("/static/core/img/taller1.webp");
     
 }
 
@@ -117,7 +119,7 @@ header a:hover{
         rgba(0,0,0,0.5)
 
     )
-    ,url("imagenes/taller2.jpg");
+    ,url("/static/core/img/taller2.jpg");
 }
 
 .carta:nth-child(3){
@@ -127,7 +129,7 @@ header a:hover{
         rgba(0,0,0,0.5)
 
     )
-    ,url("imagenes/taller3.jpg");
+    ,url("/static/core/img/taller3.jpg");
 }
 .carrousel{
     width: 100%;
@@ -263,13 +265,51 @@ ul{
 	background-color: #ffffff;
 }
 
+
+.slider{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+.slider ul{
+      display: flex;
+      animation: cambio 20s infinite alternate linear;
+      width: 400%;
+}
+.slider li{
+      width: 100%;
+      list-style: none;
+}
+.slider img{
+      width: 100%;
+      height: 80%;
+}
+@keyframes cambio{
+      0%{margin-left: 0;}
+      20%{margin-left: 0;}
+      
+      25%{margin-left: -100%;}
+      45%{margin-left: -100%;}
+      
+      50%{margin-left: -200%;}
+      70%{margin-left: -200%;}
+      
+      75%{margin-left: -300%;}
+      100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+      height: 100vh;
+}
+}
+
 @media (min-width: 720px){
     header{
         position:fixed;
         width: 100%;
     }
     header .logo{
-        background-image: url("imagenes/logoo.png");
+        background-image: url("/static/core/img/logoo.png");
         background-size: cover;
         background-position: center center;
         height: 70px;
@@ -290,7 +330,7 @@ ul{
 
     }
     #nosotros .img-container{
-        background-image: url("imagenes/imagen1.jpg");
+        background-image: url("/static/core/img/imagen1.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -305,6 +345,7 @@ ul{
     }
     
 }
+
 @media(max-width: 767px){
     .footer-col{
       width: 50%;
