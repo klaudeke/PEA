@@ -6,6 +6,7 @@ html{
 }
 body{
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;	
 }
 
 h1{font-size: 3.5em;}
@@ -32,6 +33,10 @@ button:hover{
 .container{
     max-width: 1400px;
     margin: auto;
+    display: flex;
+	justify-content: center;
+	height: 100vh;
+    align-items: center;
 }
 header{
     background-color: rgb(255, 253, 253);
@@ -187,6 +192,10 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
+#nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
 @media (min-width: 720px){
     header{
         position:fixed;
@@ -198,6 +207,23 @@ ul{
         background-position: center center;
         height: 70px;
         width: 170px;
+    }
+    #nosotros .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    #nosotros .img-container{
+        background-image: url("/static/core/img/imagen1.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 600px;
     }
 }
 @media(max-width: 767px){
