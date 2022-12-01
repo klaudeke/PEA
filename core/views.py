@@ -32,3 +32,7 @@ def taller3(request):
 
 def crearnuevotaller(request):
     return render(request,'core/crearnuevotaller.html')   
+
+def cuentausuario(request):
+    return render(request,'core/cuentausuario.html')   
+
