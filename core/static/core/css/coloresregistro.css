@@ -6,7 +6,7 @@ html{
 }
 body{
     margin: 0;
-    background-image: url('imagenes/fondologin.jpg');
+    background-image: url('/static/core/img/fondologin.jpg');
 }
 
 h1{font-size: 3.5em;}
@@ -196,7 +196,7 @@ ul{
         width: 100%;
     }
     header .logo{
-        background-image: url("imagenes/logoo.png");
+        background-image: url("/static/core/img/logoo.png");
         background-size: cover;
         background-position: center center;
         height: 70px;

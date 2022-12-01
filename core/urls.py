@@ -15,10 +15,14 @@ Including another URLconf
 """
 
 from django.urls import path
-from .views import home
+from .views import home, talleres,login,registro
+
 
 urlpatterns = [
     path('', home,name="home"),
+    path('inscripcion/', talleres,name="talleres"),
+    path('login/', login,name="login"),
+    path('registro/', registro,name="registro"),
 ]
 
 

@@ -14,31 +14,100 @@
             <br>
             <div class="logo"></div>
             <nav>
-                <a href="https://ismaelparra123.github.io/Municipalidad_P/home.html">Home</a>
-                <a href="#talleres">Talleres</a>
+                <a href="http://127.0.0.1:8000/">Home</a>
+                <a href="">Talleres</a>
                 <a href="#">Informacion</a>
                 <a href="#">Servicios</a>
-                <a href="https://ismaelparra123.github.io/Municipalidad_P/login.html">Login</a>
+                <a href="{% url 'talleres'%}">Inscripcion</a>
+                <a href="{% url 'login'%}">Login</a>
             </nav>
             
         </div>
     </header>
     
-    <div id="nosotros">
-        <div class="container">
-            <div class="img-container"></div>
-            <div class="texto">
-                <center><h2>Bienvenido</h2>
-                <h4>Municipalidad de Puente Alto</h4>
-                <p>Estas listo para ingresar a un taller y compenzar con tus clases, comienza ahora, realiza la inscripcion para ingresar
-                    al taller que mas te guste, tenemos diferentes profesores listos para enseñar y realizar actividades fisicas para todo 
-                    todas las edades, no olvides que puedes postular como profesor no importa la edad.
-                </p></center>
-            </div>
-            
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><div class="containerr">
+        <div class="form-image">
+            <img src="/static/core/img/nuevo.png" alt="">
         </div>
-    </div>
+        <div class="form">
+            <form action="#">
+                <h1>Inscripcion</h1>
+                <br>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nombre</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="" required>
+                    </div>
 
+                    <div class="input-box">
+                        <label for="lastname">Apellidos</label>
+                        <input id="lastname" type="text" name="lastname" placeholder=""required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="rut">Rut</label>
+                        <input id="rut" type="rut" name="rut" placeholder="" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="Genero">Genero</label>
+                        <input id="Genero" type="Genero" name="Genero" placeholder="" required>
+                    </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Talleres</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Taler 1</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Taller 2</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Taller 3</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div></center>
+
+    <br>
+    <br>
+    <br>
 
 
 

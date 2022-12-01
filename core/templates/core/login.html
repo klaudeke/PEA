@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/static/core/css/coloreslogin.css">
+    <link rel="stylesheet" href="/static/core/css/coloresregistro.css">
     
 
 </head>
@@ -16,10 +16,11 @@
             <div class="logo"></div>
             <nav>
                 <a href="http://127.0.0.1:8000/">Home</a>
-                <a href="#talleres">Talleres</a>
+                <a href="">Talleres</a>
                 <a href="#">Informacion</a>
                 <a href="#">Servicios</a>
-                <a href="https://ismaelparra123.github.io/Municipalidad_P/login.html">Login</a>
+                <a href="{% url 'talleres'%}">Inscripcion</a>
+                <a href="{% url 'login'%}">Login</a>
             </nav>
             
         </div>
@@ -34,7 +35,7 @@
         <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
         <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
         <input class="botons" type="submit" value="Aceptar">
-        <p><a href="https://ismaelparra123.github.io/Municipalidad_P/registro.html">Registrarce</a></p>
+        <p><a href="{% url 'registro'%}">Registrarce</a></p>
 
 
 
