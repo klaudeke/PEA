@@ -1,13 +1,12 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
     margin: 0;
+    background-image: url('/static/core/img/fondologin.jpg');
 }
 
 h1{font-size: 3.5em;}
@@ -23,14 +22,12 @@ button{
     font-weight: bold;
     padding: 5px 30px;
     border-radius: 5px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 10px gray;
     color: white;
     background-color: rgb(70, 43, 247);
 }
 
 button:hover{
-    background-color: aqua;
+    background-color: rgb(53, 87, 132);
 }
 
 .container{
@@ -73,130 +70,6 @@ header a:hover{
     color: rgb(31, 41, 229);
 }
 
-#nosotros .container{
-    text-align: center;
-    padding: 200px 12px;
-}
-
-#talleres{
-    background-color: rgb(30, 30,30);
-    color: white;
-    text-align: center;
-}
-#talleres .container{
-    padding: 200px 0px;
-}
-#talleres h2{
-    margin-top: 0;
-    font-size: 3.2em;
-}
-#talleres p{
-    display: none;
-}
-#talleres .carta{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
-}
-
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-
-    )
-    ,url("/static/core/img/taller1.jpg");
-    
-}
-
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-
-    )
-    ,url("/static/core/img/taller2.webp");
-}
-
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-
-    )
-    ,url("/static/core/img/taller3.webp");
-}
-.carrousel{
-    width: 100%;
-}
-
-.conteCarrousel{
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.itemCarrousel{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.itemCarrouselTarjeta{
-    width: 100%;
-    height: 100%;
-}
-
-.itemCarrouselArrows{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px; 
-}
-
-.itemCarrouselArrows > i:hover {
-    cursor: pointer;
-}
-
-#itemCarrousel-1{
-    background-color: rgb(226, 50, 50);
-}
-
-#itemCarrousel-2{
-    background-color: rgb(50, 200, 226);
-}
-
-#itemCarrousel-3{
-    background-color: rgb(200, 226, 50);
-}
-
-.conteCarrouselController{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.conteCarrouselController > a{
-    text-decoration: none;
-    font-size: 2em;
-    color: grey;
-}
-
-.itemCarrouselArrows > a > i{
-    color: white;
-}
 .row{
 	display: flex;
 	flex-wrap: wrap;
@@ -204,7 +77,10 @@ header a:hover{
 ul{
 	list-style: none;
 }
-
+#nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
 .footer{
 	background-color: #24262b;
     padding: 70px 0;
@@ -264,45 +140,6 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
-
-
-.slider{
-    width: 100%;
-    height: 700px;
-    overflow: hidden;
-}
-.slider ul{
-      display: flex;
-      animation: cambio 20s infinite alternate linear;
-      width: 400%;
-}
-.slider li{
-      width: 100%;
-      list-style: none;
-}
-.slider img{
-      width: 100%;
-      height: 80%;
-}
-@keyframes cambio{
-      0%{margin-left: 0;}
-      20%{margin-left: 0;}
-      
-      25%{margin-left: -100%;}
-      45%{margin-left: -100%;}
-      
-      50%{margin-left: -200%;}
-      70%{margin-left: -200%;}
-      
-      75%{margin-left: -300%;}
-      100%{margin-left: -300%;}
-}
-@media only screen and (min-width:320px) and (max-width:768px){
-.slider, .slider ul, .slider img{
-      height: 100vh;
-}
-}
-
 @media (min-width: 720px){
     header{
         position:fixed;
@@ -330,22 +167,13 @@ ul{
 
     }
     #nosotros .img-container{
-        background-image: url("/static/core/img/imagen1.jpg");
+        background-image: url("/static/core/img/fototaller2.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
         width: 600px;
     }
-    #talleres .taller{
-        display: flex;
-        justify-content: center;
-    }
-    #talleres .carta{
-        padding: 100px;
-    }
-    
 }
-
 @media(max-width: 767px){
     .footer-col{
       width: 50%;

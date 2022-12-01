@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/static/core/css/coloreshome.css">
-
+    <title>Talleres</title>
+    <link rel="stylesheet" href="/static/core/css/installeresColo.css">
+    
 </head>
 <body>
     <header>
@@ -23,69 +23,65 @@
             
         </div>
     </header>
-
-    <div class="slider">
-        <ul>
-            <li>
-                <img src="/static/core/img/registrate.png">
-            </li>
-            <li>
-                <img src="/static/core/img/inicio1.png">
-            </li>
-            <li>
-                <img src="/static/core/img/super.png">
-            </li>
-            <li>
-                <img src="/static/core/img/nuevo.png">
-            </li>
-        </ul>
-    </div>
-
-    <div id="nosotros">
-        <div class="container">
-            <div class="img-container"></div>
-            <div class="texto">
-                <center><h2>Bienvenido</h2>
-                <h4>Municipalidad de Puente Alto</h4>
-                <p>Estas listo para ingresar a un taller y compenzar con tus clases, comienza ahora, realiza la inscripcion para ingresar
-                    al taller que mas te guste, tenemos diferentes profesores listos para enseñar y realizar actividades fisicas para todo 
-                    todas las edades, no olvides que puedes postular como profesor no importa la edad.
-                </p></center>
-            </div>
-            
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <center><section class="containerr">
+        <!--Card1-->
+        <div class="containerr__card">
+          <img src="/static/core/img/taller1.jpg" alt="img" />
+          <div class="subcontainerr">
+            <p class="containerr__title">Taller 1 </p>
+            <p >⭐ ⭐ ⭐ ⭐ ⭐</p>
+            <p class="containerr__description">
+                144 sesiones a repartir entre:
+                Baile - Body Pump - Body Combat - Power Jump - Box - Funcional - Gap - Kick Boxing - Spinning - Trx 
+            </p>
+           <a class="button" href="{% url 'taller1'%}">Visualizar</a>
+          </div>
         </div>
-    </div>
-
-
-    <div id="talleres">
-        <div class="container">
-            <h2>Talleres Disponibles</h2>
-            <br>
-            <div class="taller">
-                <div class="carta">
-                    <h3>Taller 1</h3>
-                    <br>
-                    <form action="{% url 'taller1'%}">
-                        <button> Informacion</button>
-                    </form>
-                </div>
-                <div class="carta">
-                    <h3>Taller 2</h3>
-                    <br>
-                    <form action="{% url 'taller2'%}">
-                        <button> Informacion</button>
-                    </form>
-                </div>
-                <div class="carta">
-                    <h3>Taller 3</h3>
-                    <br>
-                    <form action="{% url 'taller3'%}">
-                        <button> Informacion</button>
-                    </form>
-                </div>
-            </div>
+        <!--Card2-->
+        <div class="containerr__card">
+          <img src="/static/core/img/taller2.webp" alt="img" />
+          <div class="subcontainerr">
+            <p class="containerr__title">Taller 2 </p>
+            <p >⭐ ⭐ ⭐ ⭐ </p>
+            <p class="containerr__description">
+                Recreativos multitaller, crochet y coro, 
+                así como acceso al aprendizaje de funciones básicas de lectura- matemática.
+            </p>
+           <a class="button" href="{% url 'taller2'%}">Visualizar</a>
+          </div>
         </div>
-    </div>
+  
+        <!--Card3-->
+        <div class="containerr__card">
+          <img src="/static/core/img/taller3.webp" alt="img" />
+          <div class="subcontainerr">
+            <p class="containerr__title">Taller 3 </p>
+            <p > ⭐ ⭐ ⭐ ⭐ ⭐</p>
+            <p class="containerr__description">
+                Trabajar musculatura,piernas,Movilizar el cuerpo,Trabajar flexibilidad,Dirigido a personas mayores (60+).
+            </p>
+           <a class="button" href="{% url 'taller3'%}">Visualizar</a>
+          </div>
+        </div>
+    </section></center>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -124,7 +120,5 @@
             </div>
         </div>
     </footer>
-
-
 </body>
 </html>

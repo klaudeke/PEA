@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/static/core/css/coloreshome.css">
-
+    <title>Instructor</title>
+    <link rel="stylesheet" href="/static/core/css/coloresinstructor.css">
+    
 </head>
 <body>
     <header>
@@ -23,69 +23,91 @@
             
         </div>
     </header>
-
-    <div class="slider">
-        <ul>
-            <li>
-                <img src="/static/core/img/registrate.png">
-            </li>
-            <li>
-                <img src="/static/core/img/inicio1.png">
-            </li>
-            <li>
-                <img src="/static/core/img/super.png">
-            </li>
-            <li>
-                <img src="/static/core/img/nuevo.png">
-            </li>
-        </ul>
-    </div>
-
-    <div id="nosotros">
-        <div class="container">
-            <div class="img-container"></div>
-            <div class="texto">
-                <center><h2>Bienvenido</h2>
-                <h4>Municipalidad de Puente Alto</h4>
-                <p>Estas listo para ingresar a un taller y compenzar con tus clases, comienza ahora, realiza la inscripcion para ingresar
-                    al taller que mas te guste, tenemos diferentes profesores listos para enseñar y realizar actividades fisicas para todo 
-                    todas las edades, no olvides que puedes postular como profesor no importa la edad.
-                </p></center>
-            </div>
-            
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><div class="containerr">
+        <div class="form-image">
+            <img src="/static/core/img/instructor.png" alt="">
         </div>
-    </div>
+        <div class="form">
+            <form action="#">
+                <h1>Instructor</h1>
+                <br>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nombre Completo</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="rut">Rut</label>
+                        <input id="rut" type="rut" name="rut" placeholder="" required>
+                    </div>
 
 
-    <div id="talleres">
-        <div class="container">
-            <h2>Talleres Disponibles</h2>
-            <br>
-            <div class="taller">
-                <div class="carta">
-                    <h3>Taller 1</h3>
-                    <br>
-                    <form action="{% url 'taller1'%}">
-                        <button> Informacion</button>
-                    </form>
+                    <div class="input-box">
+                        <label for="Genero">Genero</label>
+                        <input id="Genero" type="Genero" name="Genero" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Certificacion">Certificacion</label>
+                        <input id="Certificacion" type="Certificacion" name="Certificacion" placeholder="" required>
+                    </div>
+
+                    
+
                 </div>
-                <div class="carta">
-                    <h3>Taller 2</h3>
-                    <br>
-                    <form action="{% url 'taller2'%}">
-                        <button> Informacion</button>
-                    </form>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
                 </div>
-                <div class="carta">
-                    <h3>Taller 3</h3>
-                    <br>
-                    <form action="{% url 'taller3'%}">
-                        <button> Informacion</button>
-                    </form>
-                </div>
-            </div>
+
+            </form>
         </div>
-    </div>
+    </div></center>
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -124,7 +146,5 @@
             </div>
         </div>
     </footer>
-
-
 </body>
 </html>

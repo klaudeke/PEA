@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/static/core/css/coloresregistro.css">
+    <link rel="stylesheet" href="/static/core/css/coloreslogin.css">
     
 
 </head>
@@ -16,10 +16,9 @@
             <div class="logo"></div>
             <nav>
                 <a href="http://127.0.0.1:8000/">Home</a>
-                <a href="">Talleres</a>
-                <a href="#">Informacion</a>
-                <a href="#">Servicios</a>
-                <a href="{% url 'talleres'%}">Inscripcion</a>
+                <a href="{% url 'ingtalleres'%}">Talleres</a>
+                <a href="{% url 'instructor'%}">Instructor</a>
+                <a href="{% url 'talleres'%}">Inscripcion a taller</a>
                 <a href="{% url 'login'%}">Login</a>
             </nav>
             
@@ -34,7 +33,9 @@
         <center><h4>Bienvenido inicie su sesión</h4></center>
         <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
         <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-        <input class="botons" type="submit" value="Aceptar">
+        <center><form action="#">
+            <button> Aceptar</button>
+        </form></center>
         <p><a href="{% url 'registro'%}">Registrarce</a></p>
 
 

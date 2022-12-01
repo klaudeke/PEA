@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talleres</title>
+    <title>Inscripcion</title>
     <link rel="stylesheet" href="/static/core/css/colorestalleres.css">
     
 </head>
@@ -15,10 +15,9 @@
             <div class="logo"></div>
             <nav>
                 <a href="http://127.0.0.1:8000/">Home</a>
-                <a href="">Talleres</a>
-                <a href="#">Informacion</a>
-                <a href="#">Servicios</a>
-                <a href="{% url 'talleres'%}">Inscripcion</a>
+                <a href="{% url 'ingtalleres'%}">Talleres</a>
+                <a href="{% url 'instructor'%}">Instructor</a>
+                <a href="{% url 'talleres'%}">Inscripcion a taller</a>
                 <a href="{% url 'login'%}">Login</a>
             </nav>
             

@@ -3,7 +3,6 @@
 }
 html{
     scroll-behavior: smooth;
-    
 }
 body{
     margin: 0;
@@ -90,7 +89,7 @@ header a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fde3a7d7;
+    background-color: #adacaad7;
     padding: 1rem;
 }
 
