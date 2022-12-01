@@ -30,4 +30,5 @@ def taller2(request):
 def taller3(request):
     return render(request,'core/taller3.html')
 
-    
+def crearnuevotaller(request):
+    return render(request,'core/crearnuevotaller.html')   

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talleres</title>
-    <link rel="stylesheet" href="/static/core/css/installeresColo.css">
+    <title>Instructor</title>
+    <link rel="stylesheet" href="/static/core/css/coloresnuevotaller.css">
     
 </head>
 <body>
@@ -33,58 +33,87 @@
     <br>
     <br>
     <br>
-    
-    <center><section class="containerr">
-        <!--Card1-->
-        <div class="containerr__card">
-          <img src="/static/core/img/taller1.jpg" alt="img" />
-          <div class="subcontainerr">
-            <p class="containerr__title">Taller 1 </p>
-            <p >⭐ ⭐ ⭐ ⭐ ⭐</p>
-            <p class="containerr__description">
-                144 sesiones a repartir entre:
-                Baile - Body Pump - Body Combat - Power Jump - Box - Funcional - Gap - Kick Boxing - Spinning - Trx 
-            </p>
-           <a class="button" href="{% url 'taller1'%}">Visualizar</a>
-          </div>
+    <center><div class="containerr">
+        <div class="form-image">
+            <img src="/static/core/img/creataller.jpg" alt="">
         </div>
-        <!--Card2-->
-        <div class="containerr__card">
-          <img src="/static/core/img/taller2.webp" alt="img" />
-          <div class="subcontainerr">
-            <p class="containerr__title">Taller 2 </p>
-            <p >⭐ ⭐ ⭐ ⭐ </p>
-            <p class="containerr__description">
-                Recreativos multitaller, crochet y coro, 
-                así como acceso al aprendizaje de funciones básicas de lectura- matemática.
-            </p>
-           <a class="button" href="{% url 'taller2'%}">Visualizar</a>
-          </div>
+        <div class="form">
+            <form action="#">
+                <h1>Crea tu taller</h1>
+                <br>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nombre Completo</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="rut">Rut</label>
+                        <input id="rut" type="rut" name="rut" placeholder="" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="ntaller">Nombre de taller</label>
+                        <input id="ntaller" type="ntaller" name="ntaller" placeholder="" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="Certificacion">Certificacion</label>
+                        <input id="Certificacion" type="Certificacion" name="Certificacion" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="dtaller">Descripcion taller</label>
+                        <input id="dtaller" type="dtaller" name="dtaller" placeholder="" required>
+                    </div>
+
+                   
+
+                    
+
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Enviar solicitud</a> </button>
+                </div>
+
+            </form>
         </div>
-  
-        <!--Card3-->
-        <div class="containerr__card">
-          <img src="/static/core/img/taller3.webp" alt="img" />
-          <div class="subcontainerr">
-            <p class="containerr__title">Taller 3 </p>
-            <p > ⭐ ⭐ ⭐ ⭐ ⭐</p>
-            <p class="containerr__description">
-                Trabajar musculatura,piernas,Movilizar el cuerpo,Trabajar flexibilidad,Dirigido a personas mayores (60+).
-            </p>
-           <a class="button" href="{% url 'taller3'%}">Visualizar</a>
-          </div>
-        </div>
-    </section></center>
-    <br>
-    <br>
-    <br>
-    <center><a class="button" href="{% url 'crearnuevotaller'%}">Enviar solicitud de taller +</a></center>
+    </div></center>
 
     <br>
     <br>
     <br>
-    <br>
-    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer class="footer">
         <div class="container">
