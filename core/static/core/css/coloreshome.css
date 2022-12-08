@@ -9,6 +9,7 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    
 }
 
 h1{ font-size: 3.5em;}
@@ -308,6 +309,7 @@ ul{
         background-position: center center;
         height: 409px;
         width: 500px; 
+        
     }
 
     #nuestros-programas .programas{

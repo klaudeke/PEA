@@ -21,14 +21,14 @@ def ingresarTaller(request):
 def instructorNuevo(request):
     return render(request,'core/instructorNuevo.html')
 
-def taller1(request):
-    return render(request,'core/taller1.html')
+def tallerIngresado1(request):
+    return render(request,'core/tallerIngresado1.html')
 
-def taller2(request):
-    return render(request,'core/taller2.html')
+def tallerIngresado2(request):
+    return render(request,'core/tallerIngresado2.html')
 
-def taller3(request):
-    return render(request,'core/taller3.html')
+def tallerIngresado3(request):
+    return render(request,'core/tallerIngresado3.html')
 
 def crearnuevotaller(request):
     return render(request,'core/crearnuevotaller.html')   
