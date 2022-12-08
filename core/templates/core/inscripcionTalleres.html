@@ -1,39 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscripcion</title>
-    <link rel="stylesheet" href="/static/core/css/colorestalleres.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/core/css/coloresInstructorNuevo.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
     <header>
         <div class="container">
-            <br>
-            <div class="logo"></div>
+            <p class="logo">PEA 🌄</p>
             <nav>
                 <a href="http://127.0.0.1:8000/">Home</a>
-                <a href="{% url 'ingtalleres'%}">Talleres</a>
-                <a href="{% url 'instructor'%}">Instructor</a>
-                <a href="{% url 'talleres'%}">Inscripción a taller</a>
+                <a href="{% url 'ingresarTaller'%}">Talleres</a>
+                <a href="{% url 'instructorNuevo'%}">Inscripción instructores</a>
+                <a href="{% url 'inscripcionTalleres'%}">Inscripción a taller</a>
                 <a href="{% url 'login'%}">Login</a>
             </nav>
-            
         </div>
     </header>
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br><br><br><br><br><br><br><br><br><br><br>
     <center><div class="containerr">
         <div class="form-image">
             <img src="/static/core/img/nuevo.png" alt="">
@@ -83,7 +69,7 @@
                     <div class="gender-group">
                         <div class="gender-input">
                             <input id="female" type="radio" name="gender">
-                            <label for="female">Taler 1</label>
+                            <label for="female">Taller 1</label>
                         </div>
 
                         <div class="gender-input">
@@ -101,13 +87,12 @@
                 <div class="continue-button">
                     <button><a href="#">Continuar</a> </button>
                 </div>
+                <br>
             </form>
         </div>
     </div></center>
 
-    <br>
-    <br>
-    <br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
 
     <div class="containerrr">
         <input type="checkbox" id="btn-mas">
@@ -122,6 +107,7 @@
             <label for="btn-mas" class="fa fa-plus"></label>
         </div>
     </div>
+
 
     <footer class="footer">
         <div class="container">
@@ -143,7 +129,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Informacion</h4>
+                    <h4>Información</h4>
                     <ul>
                         <li><a href="#">Ayuda</a></li>
                         <li><a href="#">Asistencia </a></li>
