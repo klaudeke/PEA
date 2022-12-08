@@ -18,8 +18,8 @@ def registro(request):
 def ingresarTaller(request):
     return render(request,'core/ingresarTaller.html')
 
-def instructor(request):
-    return render(request,'core/instructor.html')
+def instructorNuevo(request):
+    return render(request,'core/instructorNuevo.html')
 
 def taller1(request):
     return render(request,'core/taller1.html')

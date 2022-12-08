@@ -15,7 +15,7 @@ Including another URLconf
 """
 
 from django.urls import path
-from .views import home, talleres,login,registro,ingresarTaller, instructor, taller1, taller2,taller3, crearnuevotaller, cuentausuario
+from .views import home, talleres,login,registro,ingresarTaller, instructorNuevo, taller1, taller2,taller3, crearnuevotaller, cuentausuario
 
 
 urlpatterns = [
@@ -24,7 +24,7 @@ urlpatterns = [
     path('login/', login,name="login"),
     path('registro/', registro,name="registro"),
     path('ingresarTaller/', ingresarTaller,name="ingresarTaller"),
-    path('instructor/', instructor,name="instructor"),
+    path('instructorNuevo/', instructorNuevo,name="instructorNuevo"),
     path('taller1/', taller1 ,name="taller1"),
     path('taller2/', taller2 ,name="taller2"),
     path('taller3/', taller3 ,name="taller3"),
