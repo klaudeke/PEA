@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="/static/core/css/coloreshome.css">
+    <link rel="stylesheet" href="/static/core/css/coloresHome.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     
-
 </head>
 <body>
     <header>
         <div class="container">
-            <br>
-            <div class="logo"></div>
+            <p class="logo">PEA 🌄</p>
             <nav>
                 <a href="http://127.0.0.1:8000/">Home</a>
                 <a href="{% url 'ingtalleres'%}">Talleres</a>
@@ -22,87 +17,68 @@
                 <a href="{% url 'talleres'%}">Inscripción a taller</a>
                 <a href="{% url 'login'%}">Login</a>
             </nav>
-            
         </div>
     </header>
+    
+   
 
-    <div class="slider">
-        <ul>
-            <li>
-                <img src="/static/core/img/registrate.png">
-            </li>
-            <li>
-                <img src="/static/core/img/inicio1.png">
-            </li>
-            <li>
-                <img src="/static/core/img/super.png">
-            </li>
-            <li>
-                <img src="/static/core/img/nuevo.png">
-            </li>
-        </ul>
-    </div>
-
-    <div id="nosotros">
+    <section id="somos-proya">
         <div class="container">
             <div class="img-container"></div>
             <div class="texto">
-                <center><h2>Bienvenido</h2>
-                <h4>Municipalidad de Puente Alto</h4>
-                <p>Estas listo para ingresar a un taller y compensar con tus clases, comienza ahora, realiza la inscripción para ingresar
+
+                <center><h2><span class="color-acento">Bienvenidos!</span> Municipalidad de Puente Alto</h2></center>
+                
+                <center><p>Estas listo para ingresar a un taller y compensar con tus clases, comienza ahora, realiza la inscripción para ingresar
                     al taller que más te guste, tenemos diferentes profesores listos para enseñar y realizar actividades físicas para todo 
-                    todas las edades, no olvides que puedes postular como profesor no importa la edad.
-
-                </p></center>
+                    todas las edades, no olvides que puedes postular como profesor no importa la edad.</p></center>
             </div>
-            
         </div>
-    </div>
+    </section>
 
-
-    <div id="talleres">
+    <section id="nuestros-programas">
         <div class="container">
-            <h2>Talleres Disponibles</h2>
-            <br>
-            <div class="taller">
+            <h2>~ Talleres Disponibles ~</h2>
+            <div class="programas">
                 <div class="carta">
+                    <br>
                     <h3>Taller 1</h3>
                     <br>
-                    <form action="{% url 'taller1'%}">
-                        <button> Información</button>
-                    </form>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="continue-button">
+                        <button><a href="{% url 'taller1'%}">+ Informacion</a> </button>
+                    </div>
                 </div>
                 <div class="carta">
+                    <br>
                     <h3>Taller 2</h3>
                     <br>
-                    <form action="{% url 'taller2'%}">
-                        <button> Información</button>
-                    </form>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="continue-button">
+                        <button><a href="{% url 'taller2'%}">+ Informacion</a> </button>
+                    </div>
                 </div>
                 <div class="carta">
+                    <br>
                     <h3>Taller 3</h3>
                     <br>
-                    <form action="{% url 'taller3'%}">
-                        <button> Información</button>
-                    </form>
-                </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="continue-button">
+                        <button><a href="{% url 'taller3'%}">+ Informacion</a> </button>
+                    </div>
+                </div>  
             </div>
         </div>
-    </div>
-
-    <div class="containerrr">
-        <input type="checkbox" id="btn-mas">
-        <div class="redes">
-            <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" class="fa fa-twitter"></a>
-            <a href="{% url 'cuentausuario'%}" >👤</a>
-            
-        </div>
-        <div class="btn-mas">
-            <label for="btn-mas" class="fa fa-plus"></label>
-        </div>
-    </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -143,6 +119,6 @@
         </div>
     </footer>
 
-
+    
 </body>
 </html>

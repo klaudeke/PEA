@@ -12,16 +12,14 @@
 <body>
     <header>
         <div class="container">
-            <br>
-            <div class="logo"></div>
+            <p class="logo">ProgramaYa!</p>
             <nav>
                 <a href="http://127.0.0.1:8000/">Home</a>
                 <a href="{% url 'ingtalleres'%}">Talleres</a>
                 <a href="{% url 'instructor'%}">Instructor</a>
-                <a href="{% url 'talleres'%}">Inscripcion a taller</a>
+                <a href="{% url 'talleres'%}">Inscripción a taller</a>
                 <a href="{% url 'login'%}">Login</a>
             </nav>
-            
         </div>
     </header>
     
@@ -35,47 +33,28 @@
     <br>
     <br>
     
-    <center><section class="containerr">
-        <!--Card1-->
-        <div class="containerr__card">
-          <img src="/static/core/img/taller1.jpg" alt="img" />
-          <div class="subcontainerr">
-            <p class="containerr__title">Taller 1 </p>
-            <p >⭐ ⭐ ⭐ ⭐ ⭐</p>
-            <p class="containerr__description">
-                144 sesiones a repartir entre:
-                Baile - Body Pump - Body Combat - Power Jump - Box - Funcional - Gap - Kick Boxing - Spinning - Trx 
-            </p>
-           <a class="button" href="{% url 'taller1'%}">Visualizar</a>
-          </div>
+    <section id="nuestros-programas">
+        <div class="container">
+            <h2>Talleres Disponibles</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Programador Front-end</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Programador Full-Stack</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Programador Python</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
+                    <button>+ Info</button>
+                </div>  
+            </div>
         </div>
-        <!--Card2-->
-        <div class="containerr__card">
-          <img src="/static/core/img/taller2.webp" alt="img" />
-          <div class="subcontainerr">
-            <p class="containerr__title">Taller 2 </p>
-            <p >⭐ ⭐ ⭐ ⭐ </p>
-            <p class="containerr__description">
-                Recreativos multitaller, crochet y coro, 
-                así como acceso al aprendizaje de funciones básicas de lectura- matemática.
-            </p>
-           <a class="button" href="{% url 'taller2'%}">Visualizar</a>
-          </div>
-        </div>
-  
-        <!--Card3-->
-        <div class="containerr__card">
-          <img src="/static/core/img/taller3.webp" alt="img" />
-          <div class="subcontainerr">
-            <p class="containerr__title">Taller 3 </p>
-            <p > ⭐ ⭐ ⭐ ⭐ ⭐</p>
-            <p class="containerr__description">
-                Trabajar musculatura, piernas, Movilizar el cuerpo, Trabajar flexibilidad, Dirigido a personas mayores (60+).
-            </p>
-           <a class="button" href="{% url 'taller3'%}">Visualizar</a>
-          </div>
-        </div>
-    </section></center>
+    </section>
     <br>
     <br>
     <br>
