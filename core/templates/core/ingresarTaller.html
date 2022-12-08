@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talleres</title>
-    <link rel="stylesheet" href="/static/core/css/installeresColo.css">
+    <title>alleres</title>
+    <link rel="stylesheet" href="/static/core/css/coloresHome.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
     <header>
         <div class="container">
-            <p class="logo">ProgramaYa!</p>
+            <p class="logo">PEA 🌄</p>
             <nav>
                 <a href="http://127.0.0.1:8000/">Home</a>
-                <a href="{% url 'ingtalleres'%}">Talleres</a>
+                <a href="{% url 'ingresarTaller'%}">Talleres</a>
                 <a href="{% url 'instructor'%}">Instructor</a>
                 <a href="{% url 'talleres'%}">Inscripción a taller</a>
                 <a href="{% url 'login'%}">Login</a>
@@ -23,62 +20,59 @@
         </div>
     </header>
     
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    
+   
     <section id="nuestros-programas">
         <div class="container">
-            <h2>Talleres Disponibles</h2>
+            <h2>~ Talleres Disponibles ~</h2>
             <div class="programas">
                 <div class="carta">
-                    <h3>Programador Front-end</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
-                    <button>+ Info</button>
+                    <br>
+                    <h3>Taller 1</h3>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="continue-button">
+                        <button><a href="{% url 'taller1'%}">+ Informacion</a> </button>
+                    </div>
                 </div>
                 <div class="carta">
-                    <h3>Programador Full-Stack</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
-                    <button>+ Info</button>
+                    <br>
+                    <h3>Taller 2</h3>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="continue-button">
+                        <button><a href="{% url 'taller2'%}">+ Informacion</a> </button>
+                    </div>
                 </div>
                 <div class="carta">
-                    <h3>Programador Python</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
-                    <button>+ Info</button>
+                    <br>
+                    <h3>Taller 3</h3>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="continue-button">
+                        <button><a href="{% url 'taller3'%}">+ Informacion</a> </button>
+                    </div>
                 </div>  
             </div>
+            <br>
+            <br>
+            <div class="continue-button">
+                <button><a href="#"> + Crear nuevo taller</a> </button>
+            </div>
         </div>
+        
     </section>
-    <br>
-    <br>
-    <br>
-    <center><a class="button" href="{% url 'crearnuevotaller'%}">Enviar solicitud de taller +</a></center>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div class="containerrr">
-        <input type="checkbox" id="btn-mas">
-        <div class="redes">
-            <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" class="fa fa-twitter"></a>
-            <a href="{% url 'cuentausuario'%}" >👤</a>
-            
-        </div>
-        <div class="btn-mas">
-            <label for="btn-mas" class="fa fa-plus"></label>
-        </div>
-    </div>
+    
+    
+    
 
     <footer class="footer">
         <div class="container">
@@ -100,7 +94,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Informacion</h4>
+                    <h4>Información</h4>
                     <ul>
                         <li><a href="#">Ayuda</a></li>
                         <li><a href="#">Asistencia </a></li>
@@ -118,5 +112,7 @@
             </div>
         </div>
     </footer>
+
+    
 </body>
 </html>

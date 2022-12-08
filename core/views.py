@@ -15,8 +15,8 @@ def login(request):
 def registro(request):
     return render(request,'core/registro.html')
 
-def ingtalleres(request):
-    return render(request,'core/ingtalleres.html')
+def ingresarTaller(request):
+    return render(request,'core/ingresarTaller.html')
 
 def instructor(request):
     return render(request,'core/instructor.html')
