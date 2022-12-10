@@ -9,11 +9,11 @@ def home(request):
 def inscripcionTalleres(request):
     return render(request,'core/inscripcionTalleres.html')
 
-def login(request):
-    return render(request,'core/login.html')
+def loginUsuario(request):
+    return render(request,'core/loginUsuario.html')
 
-def registro(request):
-    return render(request,'core/registro.html')
+def registroUsuario(request):
+    return render(request,'core/registroUsuario.html')
 
 def ingresarTaller(request):
     return render(request,'core/ingresarTaller.html')
