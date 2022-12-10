@@ -30,8 +30,8 @@ def tallerIngresado2(request):
 def tallerIngresado3(request):
     return render(request,'core/tallerIngresado3.html')
 
-def crearnuevotaller(request):
-    return render(request,'core/crearnuevotaller.html')   
+def crearNuevoTaller(request):
+    return render(request,'core/crearNuevoTaller.html')   
 
 def cuentausuario(request):
     return render(request,'core/cuentausuario.html')   
