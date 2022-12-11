@@ -1,76 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talleres</title>
-    <link rel="stylesheet" href="/static/core/css/colorestalleres.css">
+    <title>Taller 3</title>
+    <link rel="stylesheet" href="/static/core/css/coloresTallerIngresado3.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
     <header>
         <div class="container">
-            <br>
-            <div class="logo"></div>
+            <p class="logo">PEA 🌄</p>
             <nav>
-                <a href="https://ismaelparra123.github.io/Municipalidad_P/home.html">Home</a>
-                <a href="#talleres">Talleres</a>
-                <a href="#">Informacion</a>
-                <a href="#">Servicios</a>
-                <a href="https://ismaelparra123.github.io/Municipalidad_P/login.html">Login</a>
+                <a href="http://127.0.0.1:8000/">Home</a>
+                <a href="{% url 'ingresarTaller'%}">Talleres</a>
+                <a href="{% url 'instructorNuevo'%}">Inscripción instructores</a>
+                <a href="{% url 'inscripcionTalleres'%}">Inscripción a taller</a>
+                <a href="{% url 'loginUsuario'%}">Login</a>
             </nav>
-            
-        </div>
+        </div>  
     </header>
-    
-    <div id="nosotros">
+            
+   
+
+    <section id="somos-proya">
         <div class="container">
             <div class="img-container"></div>
             <div class="texto">
-                <center><h2>Bienvenido</h2>
-                <h4>Municipalidad de Puente Alto</h4>
-                <p>Estas listo para ingresar a un taller y compenzar con tus clases, comienza ahora, realiza la inscripcion para ingresar
-                    al taller que mas te guste, tenemos diferentes profesores listos para enseñar y realizar actividades fisicas para todo 
-                    todas las edades, no olvides que puedes postular como profesor no importa la edad.
-                </p></center>
+
+                <center><h2><span class="color-acento">Andrew Roman</span> </h2>
+                        <p>Lunes, Miercoles y sabado.</p>
+                        <p>011:00 - 12:20</p>
+                        <p>En este taller trabajaremos musculatura, piernas, movilizar el cuerpo, trabajar flexibilidad, dirigido a 
+                            personas mayores (60+), ejercicios preparados para todo tipo de edad pero nos enfocamos en personas adultas.
+                        </p>
+                        <p>⭐⭐⭐⭐⭐</p></center>
+                    
             </div>
+        </div>
+    </section>
+
+    
+
+
+    <div class="containerrr">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" class="fa fa-twitter"></a>
+            <a href="{% url 'cuentausuario'%}" >👤</a>
             
         </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="fa fa-plus"></label>
+        </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4>Municipalidad de puente alto</h4>
+                    <h4>Municipalidad de Puente Alto</h4>
                     <ul>
                         <li><a href="https://www.google.com/maps/place/Av.+Concha+y+Toro+1820,+8150215+Puente+Alto,+Regi%C3%B3n+Metropolitana/@-33.5957612,-70.5813159,17z/data=!3m1!4b1!4m5!3m4!1s0x9662d71cb30079bd:0xa3c9d83e5ddd9f69!8m2!3d-33.5957612!4d-70.5791272">Dirección: Av. concha y Toro 1820,Puente Alto, Santiago</a></li>
                         <li><a>Mesa Central +56228101600</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Telefonos de emergencia</h4>
+                    <h4>Teléfonos de emergencia</h4>
                     <ul>
                         <li><a href="https://www.carabineros.cl/">Plan Cuadrante Carabineros 133</a></li>
                         <li><a href="https://www.pdichile.cl/">PDI 134</a></li>
@@ -79,10 +77,10 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Informacion</h4>
+                    <h4>Información</h4>
                     <ul>
                         <li><a href="#">Ayuda</a></li>
-                        <li><a href="#">asistencia </a></li>
+                        <li><a href="#">Asistencia </a></li>
                     </ul>
                 </div>
                 <div class="footer-col">

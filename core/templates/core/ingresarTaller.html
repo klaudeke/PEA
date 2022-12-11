@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="/static/core/css/coloresHome.css">
+    <title>Talleres</title>
+    <link rel="stylesheet" href="/static/core/css/coloresIngresarTaller.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     
 </head>
@@ -17,25 +17,10 @@
                 <a href="{% url 'inscripcionTalleres'%}">Inscripción a taller</a>
                 <a href="{% url 'loginUsuario'%}">Login</a>
             </nav>
-        </div>  
-    </header>
-            
-   
-
-    <section id="somos-proya">
-        <div class="container">
-            <div class="img-container"></div>
-            <div class="texto">
-
-                <center><h2><span class="color-acento">Bienvenidos!</span> Municipalidad de Puente Alto</h2></center>
-                
-                <center><p>Estas listo para ingresar a un taller y compensar con tus clases, comienza ahora, realiza la inscripción para ingresar
-                    al taller que más te guste, tenemos diferentes profesores listos para enseñar y realizar actividades físicas para todo 
-                    todas las edades, no olvides que puedes postular como profesor no importa la edad.</p></center>
-            </div>
         </div>
-    </section>
-
+    </header>
+    
+   
     <section id="nuestros-programas">
         <div class="container">
             <h2>~ Talleres Disponibles ~</h2>
@@ -77,10 +62,16 @@
                     </div>
                 </div>  
             </div>
+            <br>
+            <br>
+            <div class="continue-button">
+                <button><a href="{% url 'crearNuevoTaller'%}"> + Crear nuevo taller</a> </button>
+            </div>
         </div>
+        
     </section>
-
-
+    
+    
     <div class="containerrr">
         <input type="checkbox" id="btn-mas">
         <div class="redes">
@@ -94,7 +85,6 @@
             <label for="btn-mas" class="fa fa-plus"></label>
         </div>
     </div>
-
 
     <footer class="footer">
         <div class="container">
@@ -134,5 +124,7 @@
             </div>
         </div>
     </footer>
+
+    
 </body>
 </html>

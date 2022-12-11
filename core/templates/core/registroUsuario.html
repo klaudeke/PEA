@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Home</title>
-    <link rel="stylesheet" href="/static/core/css/coloresHome.css">
+    <link rel="stylesheet" href="/static/core/css/coloresRegistroUsuario.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     
 </head>
@@ -17,69 +17,28 @@
                 <a href="{% url 'inscripcionTalleres'%}">Inscripción a taller</a>
                 <a href="{% url 'loginUsuario'%}">Login</a>
             </nav>
-        </div>  
+        </div>
     </header>
-            
-   
-
-    <section id="somos-proya">
-        <div class="container">
-            <div class="img-container"></div>
-            <div class="texto">
-
-                <center><h2><span class="color-acento">Bienvenidos!</span> Municipalidad de Puente Alto</h2></center>
-                
-                <center><p>Estas listo para ingresar a un taller y compensar con tus clases, comienza ahora, realiza la inscripción para ingresar
-                    al taller que más te guste, tenemos diferentes profesores listos para enseñar y realizar actividades físicas para todo 
-                    todas las edades, no olvides que puedes postular como profesor no importa la edad.</p></center>
-            </div>
-        </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="form-register">
+        <center><h4>Bienvenido, registrate aqui</h4></center>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+        <input class="controls" type="text" name="correo" id="correo" placeholder="Ingrese su Correo electornico">
+        <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su Telefono">
+        <input class="controls" type="password" name="contraseña" id="contrasela" placeholder="Ingrese su Contraseña">
+        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Repetir contraeña">
+        <center><form action="#">
+            <button> Aceptar</button>
+        </form></center>
     </section>
 
-    <section id="nuestros-programas">
-        <div class="container">
-            <h2>~ Talleres Disponibles ~</h2>
-            <div class="programas">
-                <div class="carta">
-                    <br>
-                    <h3>Taller 1</h3>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="continue-button">
-                        <button><a href="{% url 'tallerIngresado1'%}">+ Informacion</a> </button>
-                    </div>
-                </div>
-                <div class="carta">
-                    <br>
-                    <h3>Taller 2</h3>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="continue-button">
-                        <button><a href="{% url 'tallerIngresado2'%}">+ Informacion</a> </button>
-                    </div>
-                </div>
-                <div class="carta">
-                    <br>
-                    <h3>Taller 3</h3>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="continue-button">
-                        <button><a href="{% url 'tallerIngresado3'%}">+ Informacion</a> </button>
-                    </div>
-                </div>  
-            </div>
-        </div>
-    </section>
-
+    <br>
+    <br>
+    <br>
+    <br>
 
     <div class="containerrr">
         <input type="checkbox" id="btn-mas">

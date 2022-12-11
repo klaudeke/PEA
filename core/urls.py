@@ -15,10 +15,21 @@ Including another URLconf
 """
 
 from django.urls import path
-from .views import home
+from .views import home, inscripcionTalleres,loginUsuario,registroUsuario,ingresarTaller, instructorNuevo, tallerIngresado1, tallerIngresado2 ,tallerIngresado3, crearNuevoTaller, cuentausuario
+
 
 urlpatterns = [
     path('', home,name="home"),
+    path('inscripcionTalleres/', inscripcionTalleres,name="inscripcionTalleres"),
+    path('loginUsuario/', loginUsuario,name="loginUsuario"),
+    path('registroUsuario/', registroUsuario,name="registroUsuario"),
+    path('ingresarTaller/', ingresarTaller,name="ingresarTaller"),
+    path('instructorNuevo/', instructorNuevo,name="instructorNuevo"),
+    path('tallerIngresado1/', tallerIngresado1 ,name="tallerIngresado1"),
+    path('tallerIngresado2/', tallerIngresado2 ,name="tallerIngresado2"),
+    path('tallerIngresado3/', tallerIngresado3 ,name="tallerIngresado3"),
+    path('crearNuevoTaller/', crearNuevoTaller,name="crearNuevoTaller"),
+    path('cuentausuario/', cuentausuario ,name="cuentausuario"),
 ]
 
 

@@ -9,7 +9,6 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    
 }
 
 h1{ font-size: 3.5em;}
@@ -82,13 +81,6 @@ header a:hover{
     color: rgb(225, 165, 16);
 }
 
-
-/*texto nosotrosssss */
-
-#somos-proya .container{
-    text-align: center;
-    padding: 200px 12px;
-}
 
 /* cartassssssssssssssssss*/
 #nuestros-programas{
@@ -194,7 +186,6 @@ header a:hover{
     font-size: 25px;
 }
 
-
 /*foooooooterrrrrrrr */
 .row{
 	display: flex;
@@ -280,36 +271,6 @@ ul{
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
-    }
-
-    
-
-    #somos-proya .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #somos-proya .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #somos-proya h2{
-        margin-top: 0px;
-    }
-
-    #somos-proya .img-container{
-        background-image: url("/static/core/img/imagen1.jpg");
-        background-size: cover;
-        background-position: center center;
-        height: 409px;
-        width: 500px; 
-        
     }
 
     #nuestros-programas .programas{

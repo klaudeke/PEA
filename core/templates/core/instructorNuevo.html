@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="/static/core/css/coloresHome.css">
+    <title>Nuevo instructor</title>
+    <link rel="stylesheet" href="/static/core/css/coloresInstructorNuevo.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
     <header>
         <div class="container">
-            <p class="logo">PEA 🌄</p>
+            <p class="logo">PEA 🌄</p>  
             <nav>
                 <a href="http://127.0.0.1:8000/">Home</a>
                 <a href="{% url 'ingresarTaller'%}">Talleres</a>
@@ -17,70 +17,78 @@
                 <a href="{% url 'inscripcionTalleres'%}">Inscripción a taller</a>
                 <a href="{% url 'loginUsuario'%}">Login</a>
             </nav>
-        </div>  
-    </header>
-            
-   
-
-    <section id="somos-proya">
-        <div class="container">
-            <div class="img-container"></div>
-            <div class="texto">
-
-                <center><h2><span class="color-acento">Bienvenidos!</span> Municipalidad de Puente Alto</h2></center>
-                
-                <center><p>Estas listo para ingresar a un taller y compensar con tus clases, comienza ahora, realiza la inscripción para ingresar
-                    al taller que más te guste, tenemos diferentes profesores listos para enseñar y realizar actividades físicas para todo 
-                    todas las edades, no olvides que puedes postular como profesor no importa la edad.</p></center>
-            </div>
         </div>
-    </section>
-
-    <section id="nuestros-programas">
-        <div class="container">
-            <h2>~ Talleres Disponibles ~</h2>
-            <div class="programas">
-                <div class="carta">
-                    <br>
-                    <h3>Taller 1</h3>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="continue-button">
-                        <button><a href="{% url 'tallerIngresado1'%}">+ Informacion</a> </button>
-                    </div>
-                </div>
-                <div class="carta">
-                    <br>
-                    <h3>Taller 2</h3>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="continue-button">
-                        <button><a href="{% url 'tallerIngresado2'%}">+ Informacion</a> </button>
-                    </div>
-                </div>
-                <div class="carta">
-                    <br>
-                    <h3>Taller 3</h3>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="continue-button">
-                        <button><a href="{% url 'tallerIngresado3'%}">+ Informacion</a> </button>
-                    </div>
-                </div>  
-            </div>
+    </header>   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><div class="containerr">
+        <div class="form-image">
+            <img src="/static/core/img/instructor.png" alt="">
         </div>
-    </section>
+        <div class="form">
+            <form action="#">
+                <h1>Instructor</h1>
+                <br>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nombre Completo</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="rut">Rut</label>
+                        <input id="rut" type="rut" name="rut" placeholder="" required>
+                    </div>
 
 
+                    <div class="input-box">
+                        <label for="Genero">Genero</label>
+                        <input id="Genero" type="Genero" name="Genero" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Certificacion">Certificación</label>
+                        <input id="Certificacion" type="Certificacion" name="Certificacion" placeholder="" required>
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+
+            </form>
+        </div>
+    </div></center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
     <div class="containerrr">
         <input type="checkbox" id="btn-mas">
         <div class="redes">

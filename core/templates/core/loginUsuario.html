@@ -1,88 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/static/core/css/coloreslogin.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/core/css/coloresLoginUsuario.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     
-
 </head>
 <body>
     <header>
         <div class="container">
-            <br>
-            <div class="logo"></div>
+            <p class="logo">PEA 🌄</p>
             <nav>
                 <a href="http://127.0.0.1:8000/">Home</a>
-                <a href="#talleres">Talleres</a>
-                <a href="#">Informacion</a>
-                <a href="#">Servicios</a>
-                <a href="https://ismaelparra123.github.io/Municipalidad_P/login.html">Login</a>
+                <a href="{% url 'ingresarTaller'%}">Talleres</a>
+                <a href="{% url 'instructorNuevo'%}">Inscripción instructores</a>
+                <a href="{% url 'inscripcionTalleres'%}">Inscripción a taller</a>
+                <a href="{% url 'loginUsuario'%}">Login</a>
             </nav>
-            
         </div>
     </header>
     <br>
     <br>
     <br>
     <br>
-    <br>
     <section class="form-register">
-        <center><h4>Bienvenido inicie su sesión</h4></center>
+        <center><h4>Bienvenido, inicie su sesión</h4></center>
         <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
         <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-        <input class="botons" type="submit" value="Aceptar">
-        <p><a href="https://ismaelparra123.github.io/Municipalidad_P/registro.html">Registrarce</a></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+        <center><form action="#">
+            <button>Aceptar</button>
+        </form></center>
+        <p><a href="{% url 'registroUsuario'%}">Registrarse</a></p>
+    
     </section>
+
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
+
+    <div class="containerrr">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" class="fa fa-twitter"></a>
+            <a href="{% url 'cuentausuario'%}" >👤</a>
+            
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="fa fa-plus"></label>
+        </div>
+    </div>
+
+
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4>Municipalidad de puente alto</h4>
+                    <h4>Municipalidad de Puente Alto</h4>
                     <ul>
                         <li><a href="https://www.google.com/maps/place/Av.+Concha+y+Toro+1820,+8150215+Puente+Alto,+Regi%C3%B3n+Metropolitana/@-33.5957612,-70.5813159,17z/data=!3m1!4b1!4m5!3m4!1s0x9662d71cb30079bd:0xa3c9d83e5ddd9f69!8m2!3d-33.5957612!4d-70.5791272">Dirección: Av. concha y Toro 1820,Puente Alto, Santiago</a></li>
                         <li><a>Mesa Central +56228101600</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Telefonos de emergencia</h4>
+                    <h4>Teléfonos de emergencia</h4>
                     <ul>
-                        <li><a href="#">Plan Cuadrante Carabineros 133</a></li>
-                        <li><a href="#">PDI 134</a></li>
-                        <li><a href="#">Bomberos 132</a></li>
-                        <li><a href="#">Ambulancias 131</a></li>
-                        <li><a href="#">Nº Emergencia Municipal +56227315388</a></li>
+                        <li><a href="https://www.carabineros.cl/">Plan Cuadrante Carabineros 133</a></li>
+                        <li><a href="https://www.pdichile.cl/">PDI 134</a></li>
+                        <li><a href="https://www.bomberos.cl/">Bomberos 132</a></li>
+                        <li><a href="https://samu.cl/">Ambulancias 131</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Informacion</h4>
+                    <h4>Información</h4>
                     <ul>
                         <li><a href="#">Ayuda</a></li>
-                        <li><a href="#">asistencia </a></li>
+                        <li><a href="#">Asistencia </a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
