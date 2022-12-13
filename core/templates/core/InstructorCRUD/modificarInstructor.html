@@ -17,7 +17,16 @@
                 <a href="{% url 'ingresarTaller'%}">Talleres</a>
                 <a href="{% url 'instructorNuevo'%}">Inscripción instructores</a>
                 <a href="{% url 'inscripcionTalleres'%}">Inscripción a taller</a>
-                <a href="{% url 'loginUsuario'%}">Login</a>
+                {% if user.is_authenticated %}
+                    <a href="#">{{ user.username }}</a>
+                    <a href="{% url 'logout' %}">cerrar sesión</a>
+              
+                {% else %}
+                
+                    <a href="{% url 'login' %}">Iniciar sesion</a>
+                    <a href="{% url 'registroUsuario' %}">Registrate</a>
+
+                {% endif %}
             </nav>
         </div>
     </header>   
@@ -50,8 +59,7 @@
                     <button >Enviar</button>
                 </div> -->
                 <div class="d-flex justify-content-center">
-                    <input type="reset" value="limpiar" class="btn btn-secondary">
-                    &nbsp;
+                    
                     <input type="submit" value="Editar" class="btn btn-primary">
                 </div>
 
