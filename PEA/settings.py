@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'PEA.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pea',
+        'NAME': 'pea_db',
         'USER': 'root',
         'PASSWORD':'',
         'HOST' : 'localhost',

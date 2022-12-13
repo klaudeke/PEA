@@ -14,7 +14,8 @@ class Instructor(models.Model):
     celular = models.CharField(max_length=12, verbose_name='fono_instructor')
     runInstructor = models.CharField(max_length=13, verbose_name='run_instructor')
     genero = models.IntegerField(choices=opcion_genero)
-    certificado = models.FileField(upload_to='certificados/', verbose_name='certificado',null=True)
+    certificado = models.CharField(max_length=100, verbose_name='certificado',null=True)
+    #certificado = models.FileField(max_length=100, verbose_name='certificado',null=True)
 
     def __str__(self):
         return self.nombre
