@@ -1,9 +1,9 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_list_or_404
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
 from .forms import InstructorForm, CustomUserCreationForm
 from django.contrib.auth import authenticate, login
-
+from .models import *
 # Create your views here.
 
 
@@ -35,19 +35,6 @@ def registroUsuario(request):
 def ingresarTaller(request):
     return render(request,'core/ingresarTaller.html')
 
-def instructorNuevo(request):
-    data = {
-        'form':InstructorForm()
-    }
-    if request.method == 'POST':
-        formulario = InstructorForm(data=request.POST)
-        if formulario.is_valid():
-            formulario.save()
-            data["mensaje"] = "formulario enviado"
-        else:
-            data["form"] = formulario
-
-    return render(request,'core/instructorNuevo.html', data)
 
 def tallerIngresado1(request):
     return render(request,'core/tallerIngresado1.html')
@@ -64,3 +51,61 @@ def crearNuevoTaller(request):
 def cuentausuario(request):
     return render(request,'core/cuentausuario.html')   
 
+def agregar_instructor(request):
+
+    data ={
+         
+    }
+
+    return render(request, 'core/instructorCRUD/agregar.html')
+
+#CRUD - INSTRUCTOR
+#AGREGAR
+def instructorNuevo(request):
+    data = {
+        'form':InstructorForm()
+    }
+    if request.method == 'POST':
+        formulario = InstructorForm(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            data["mensaje"] = "formulario enviado"
+        else:
+            data["form"] = formulario
+
+    return render(request,'core/instructorCRUD/instructorNuevo.html', data)
+
+#LISTAR
+def listar_instructor(request):
+    instructor = Instructor.objects.all()
+
+    data = {
+        'instructor': instructor
+    }
+    return render(request, 'core/instructorCRUD/listarInstructor.html',data)
+
+#MODIFICAR
+def modificar_instructor(request, id):
+
+    id_instructor = Instructor.objects.get(id=id)
+
+    data = {
+        'form': InstructorForm(instance=id_instructor)
+    }
+
+    if request.method=='POST':
+        formulario= InstructorForm(data=request.POST,instance=id_instructor)
+        if formulario.is_valid:
+            formulario.save()
+            return redirect(to="listar_instructor")
+        data["form"] = formulario
+
+    return render(request, 'core/instructorCRUD/modificarInstructor.html',data)
+
+#ELIMINAR
+def eliminar_instructor(request, id):
+    id_instructor = Instructor.objects.get(id=id)
+  
+    id_instructor.delete()
+
+    return redirect(to="listar_instructor")
