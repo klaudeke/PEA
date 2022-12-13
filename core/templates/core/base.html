@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <title>Home</title>
-    <link rel="stylesheet" href="/static/core/css/coloresRegistroUsuario.css">
+    
+    {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/core/css/coloresHome.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     
 </head>
@@ -15,30 +18,30 @@
                 <a href="{% url 'ingresarTaller'%}">Talleres</a>
                 <a href="{% url 'instructorNuevo'%}">Inscripción instructores</a>
                 <a href="{% url 'inscripcionTalleres'%}">Inscripción a taller</a>
-                <a href="{% url 'loginUsuario'%}">Login</a>
-            </nav>
-        </div>
-    </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section class="form-register">
-        <center><h4>Bienvenido, registrate aqui</h4></center>
-        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-        <input class="controls" type="text" name="correo" id="correo" placeholder="Ingrese su Correo electornico">
-        <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su Telefono">
-        <input class="controls" type="password" name="contraseña" id="contrasela" placeholder="Ingrese su Contraseña">
-        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Repetir contraeña">
-        <center><form action="#">
-            <button> Aceptar</button>
-        </form></center>
-    </section>
+                <a href="{% url 'listar_instructor'%}">Lista de instructores</a>
+                <!-- <a href="{% url 'loginUsuario'%}">Login</a> -->
+                {% if user.is_authenticated %}
+                    <a href="#">{{ user.username }}</a>
+                    <a href="{% url 'logout' %}">cerrar sesión</a>
+              
+                {% else %}
+                
+                    <a href="{% url 'login' %}">Iniciar sesion</a>
+                    <a href="{% url 'registroUsuario' %}">Registrate</a>
 
-    <br>
-    <br>
-    <br>
-    <br>
+                {% endif %}
+            </nav>
+        </div>  
+    </header>
+
+    <div id = contenido>
+        {% block contenido %}
+        {% endblock %}
+    </div>
+            
+   
+
+
 
     <div class="containerrr">
         <input type="checkbox" id="btn-mas">

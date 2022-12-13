@@ -1,0 +1,5 @@
+user: adminpea
+pass: duoc2022
+
+para instalar los requirements:
+pip install -r requirements.txt
