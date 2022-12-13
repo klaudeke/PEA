@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <title>Nuevo instructor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/core/css/coloresInstructorNuevo.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     
@@ -38,7 +40,10 @@
                 <h1>Instructor</h1>
                 <br>
                 {% csrf_token %}
-                {{ form }}
+                {% load crispy_forms_tags %}
+
+                {{ form | crispy }}
+                
                 <!-- <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Nombre Completo</label>
@@ -72,9 +77,9 @@
                     </div>
                 </div> -->
 
-                
-                    <input class="btn btn-success" type="submit" value="Enviar">
-                
+                <div class="continue-button">
+                    <button >Enviar</button>
+                </div>
 
             </form>
             {{mensaje}}
