@@ -1,27 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Talleres</title>
-    <link rel="stylesheet" href="/static/core/css/coloresIngresarTaller.css">
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
-    <header>
-        <div class="container">
-            <p class="logo">PEA 🌄</p>
-            <nav>
-                <a href="http://127.0.0.1:8000/">Home</a>
-                <a href="{% url 'ingresarTaller'%}">Talleres</a>
-                <a href="{% url 'instructorNuevo'%}">Inscripción instructores</a>
-                <a href="{% url 'inscripcionTalleres'%}">Inscripción a taller</a>
-                <a href="{% url 'loginUsuario'%}">Login</a>
-            </nav>
-        </div>
-    </header>
-    
-   
-    <section id="nuestros-programas">
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<section id="nuestros-programas">
         <div class="container">
             <h2>~ Talleres Disponibles ~</h2>
             <div class="programas">
@@ -69,62 +51,7 @@
             </div>
         </div>
         
-    </section>
+</section>
+{% endblock %}
     
     
-    <div class="containerrr">
-        <input type="checkbox" id="btn-mas">
-        <div class="redes">
-            <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" class="fa fa-twitter"></a>
-            <a href="{% url 'cuentausuario'%}" >👤</a>
-            
-        </div>
-        <div class="btn-mas">
-            <label for="btn-mas" class="fa fa-plus"></label>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Municipalidad de Puente Alto</h4>
-                    <ul>
-                        <li><a href="https://www.google.com/maps/place/Av.+Concha+y+Toro+1820,+8150215+Puente+Alto,+Regi%C3%B3n+Metropolitana/@-33.5957612,-70.5813159,17z/data=!3m1!4b1!4m5!3m4!1s0x9662d71cb30079bd:0xa3c9d83e5ddd9f69!8m2!3d-33.5957612!4d-70.5791272">Dirección: Av. concha y Toro 1820,Puente Alto, Santiago</a></li>
-                        <li><a>Mesa Central +56228101600</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Teléfonos de emergencia</h4>
-                    <ul>
-                        <li><a href="https://www.carabineros.cl/">Plan Cuadrante Carabineros 133</a></li>
-                        <li><a href="https://www.pdichile.cl/">PDI 134</a></li>
-                        <li><a href="https://www.bomberos.cl/">Bomberos 132</a></li>
-                        <li><a href="https://samu.cl/">Ambulancias 131</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Información</h4>
-                    <ul>
-                        <li><a href="#">Ayuda</a></li>
-                        <li><a href="#">Asistencia </a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Redes Sociales</h4>
-                    <div class="social-links">
-                        <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://cl.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    
-</body>
-</html>
