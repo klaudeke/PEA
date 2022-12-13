@@ -1,6 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
-from .forms import InstructorForm
+from .forms import InstructorForm, CustomUserCreationForm
+from django.contrib.auth import authenticate, login
+
 # Create your views here.
 
 
@@ -14,9 +17,20 @@ def loginUsuario(request):
     return render(request,'core/loginUsuario.html')
 
 def registroUsuario(request):
-    form = UserCreationForm()
-    context = {'form':form}
-    return render(request,'core/registroUsuario.html')
+    data = {
+        'form' : CustomUserCreationForm
+    }
+
+    if request.method == 'POST':
+        formulario = CustomUserCreationForm(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            user = authenticate(username = formulario.cleaned_data["username"], password=formulario.cleaned_data["password1"])
+            login(request, user)
+            messages.success(request, "registro exitoso")
+            return redirect(to="home")
+        data["form"] = formulario
+    return render(request,'registration/registro.html', data)
 
 def ingresarTaller(request):
     return render(request,'core/ingresarTaller.html')
